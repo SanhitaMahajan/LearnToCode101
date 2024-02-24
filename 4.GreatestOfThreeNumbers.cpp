@@ -15,8 +15,12 @@ Algorithm 1 -
 2. Declare variables first, second, third 
 3. Read values of first, second, third
 4. if first > second 
-      
-      
+      if first > third : Display first as greatest 
+      else : display third as greatest
+    else 
+       if  second > third : Display second as greatest 
+       else : display third as greatest
+5. Stop 
 */
 
 /* Method 2 - using ternary operator
@@ -74,3 +78,8 @@ int main ()
 
 // Time Complexity : O(1)
 // Space Complexity : O(1)
+
+/*
+Flowchart Link - 
+https://drive.google.com/file/d/1Ogp6J0LhDDNzHQUz2MJyJWVRNCyzqUWD/view?usp=sharing
+*/
