@@ -1,13 +1,19 @@
 /*
-Problem statement - Given two integers as input, the objective is to check both numbers for the greatest 
-and write a code to find the greatest of the two numbers in C++.
+Problem statement - Given two integers as input, the objective is to compare two numbers and 
+check which one is greater,  or if the two numbers are equal, and write a code to print the greatest of the two numbers in C++.
 */
 
 /* Method 1 - using if else statement
-Algorithm - For two user inputs num1 and num2.
-Step 1: Check if both numbers are equal If true then print “Both are equal”
-Step 2: Else if num1 > num2 If true then print num1 greater than num2
-Step 3: Else num2 has to be thee greatest Print num2 is greater than num1
+Algorithm - 
+1. Start 
+2. Read num1 , num2 
+3. if num1 == num2 : 
+      both are equal 
+   else if  num1 > num2 : 
+      num1 is greater 
+   else : 
+      num2 is greater    
+4. Stop        
 */
 
 /* Method 2 - using ternary operator
@@ -27,15 +33,33 @@ using namespace std;
 int main ()
 {
     int num1, num2, largest;
-    num1=75,num2=85;
+    cout<<"\nEnter two integer numbers - ";
+    cin>>num1>>num2;
  
     // //  using if else statement 
-    // if (num1 == num2)
-    //     cout << "both are equal"; else if (num1 > num2)
+    // if (num1 == num2){
+    //     cout << "both are equal"; 
+    // }   
+    // else if (num1 > num2){
     //     cout << num1 << " is greater than " << num2;
-    // else
-    //     cout << num2 << " is greater than " << num1;
+    // }
+    // else{
+    //      cout << num2 << " is greater than " << num1;
+    // }
 
+
+    //  using nested if else statement 
+    if (num1 == num2){
+        cout << "\nBoth are equal"; 
+    } 
+    else{
+        if (num1 > num2){
+            cout << num1 << " is greater than " << num2;
+        }
+        else{
+         cout << num2 << " is greater than " << num1;
+        }
+    }  
 
 //    // using ternary operator
 //    if(num1 == num2){
@@ -46,11 +70,11 @@ int main ()
 //     }
 
 
-    //  uising built-in max function 
-    if (num1 == num2)
-        cout << "both are equal";
-    else
-        cout << max(num1,num2) << " is greater";
+    // //  uising built-in max function 
+    // if (num1 == num2)
+    //     cout << "both are equal";
+    // else
+    //     cout << max(num1,num2) << " is greater";
 
 
 
@@ -59,3 +83,8 @@ int main ()
 
 // Time Complexity : O(1)
 // Space Complexity : O(1)
+
+/*
+Flowchart link - 
+https://drive.google.com/file/d/16f_qIpNIcX6chc0dr-6lt2YqzE1sgkck/view?usp=sharing
+*/
